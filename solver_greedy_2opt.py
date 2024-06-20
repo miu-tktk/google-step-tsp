@@ -35,8 +35,10 @@ def solve(cities): #greedy + 2opt
 
         for i in range(N - 3):
             for j in range(i + 1, N - 1):
+                #before
                 dist1 = dist[tour[i]][tour[i + 1]]
                 dist2 = dist[tour[j]][tour[j + 1]]
+                #after
                 dist3 = dist[tour[i]][tour[j]]
                 dist4 = dist[tour[i + 1]][tour[j + 1]]
 
